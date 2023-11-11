@@ -1,0 +1,116 @@
+@import 'styles/app/_mixins.scss';
+@import 'styles/app/_variables.scss';
+
+footer {
+  @include flex-center-column;
+  gap: 50px;
+  height: 100%;
+  padding: 145px 50px;
+  background: linear-gradient(252deg, #060a14 50.91%, #071c38 100%);
+  p,
+  a {
+    text-align: center;
+    color: #ffffff;
+  }
+  .title {
+    p:nth-child(1) {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 2.8px;
+    }
+    p:nth-child(2) {
+      max-width: 510px;
+      padding-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
+    }
+  }
+  .navigation {
+    @include flex-center-column;
+    gap: 10px;
+    p:first-child {
+      color: #6d6f75;
+    }
+    p,
+    a {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+  .information {
+    @include flex-center-column;
+    margin-top: 50px;
+    gap: 10px;
+    p:first-child {
+      color: #6d6f75;
+    }
+    p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+  .media {
+    @include flex-center-column;
+    gap: 50px;
+    .icons {
+      @include flex-center;
+      gap: 30px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 150px 150px;
+    .title {
+      p:nth-child(2) {
+        color: #fff;
+        font-size: 24px;
+        max-width: 510px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+      }
+      p:nth-child(3) {
+        margin-top: 150px;
+      }
+    }
+    p,
+    a {
+      text-align: start;
+    }
+    .navigation,
+    .information {
+      margin-top: 0px;
+      align-items: flex-start;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start;
+      gap: 70px;
+    }
+    .media {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 50px;
+      .icons {
+        display: flex;
+        gap: 50px;
+      }
+    }
+  }
+}

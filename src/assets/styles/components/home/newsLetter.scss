@@ -1,0 +1,47 @@
+@import 'styles/app/_mixins.scss';
+@import 'styles/app/_variables.scss';
+
+.news-letter {
+  @include flex-center-column;
+  padding: 75px 20px;
+  margin-top: 150px;
+  gap: 20px;
+  background: linear-gradient(
+    266deg,
+    #071c38 0%,
+    #060a14 17.65%,
+    #060a14 69.34%,
+    #071c38 100%
+  );
+  p {
+    color: #ffffff;
+    text-align: center;
+}
+p:nth-child(1) {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 2.8px;
+}
+p:nth-child(2) {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    max-width: 655px;
+}
+button {
+    @include button;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .news-letter {
+    p:nth-child(1) {
+      font-size: 46px;
+  }
+  p:nth-child(2) {
+      font-size: 22px;
+      letter-spacing: 1.2px;
+      max-width: 655px;
+  }
+  }
+}

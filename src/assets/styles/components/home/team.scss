@@ -1,0 +1,82 @@
+@import 'styles/app/_mixins.scss';
+@import 'styles/app/_variables.scss';
+
+.team {
+  @include flex-center-column;
+  gap: 50px;
+  margin-top: 150px;
+  .header {
+    @include flex-center-column;
+    padding: 0px 20px;
+    gap: 20px;
+    h3 {
+      font-size: 34px;
+      font-weight: 800;
+    }
+    p {
+      text-align: center;
+      font-size: 24px;
+      max-width: 500px;
+    }
+    button {
+      @include button;
+    }
+  }
+  .content {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 40px;
+    img {
+      width: 100%;
+      max-width: 490px;
+      border-radius: 45px;
+    }
+    .social {
+      @include flex-center;
+      width: 100%;
+      gap: 30px;
+      span {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 150px;
+    .header {
+      align-items: flex-start;
+      h3 {
+        width: 100%;
+        text-align: start;
+        font-size: 56px;
+      }
+      p {
+        text-align: start;
+        font-size: 24px;
+        max-width: 600px;
+      }
+      button {
+        margin-top: 100px;
+        @include button;
+      }
+    }
+
+    .content {
+      gap: 40px;
+      flex-wrap: nowrap;
+      img {
+        max-width: 1000px;
+      }
+    }
+    .social {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import 'styles/app/_mixins.scss';
+@import 'styles/app/_variables.scss';
+
+.main {
+  @include flex-center-column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 5px;
+  .title {
+    @include flex-center-column;
+    height: 100%;
+    h2 {
+      color: $white;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 5px;
+    }
+    h1 {
+      color: $white;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .container {
+    @include flex-center-column;
+    margin: 50px;
+    gap: 10px;
+    animation: scroll 1.5s ease-in-out infinite;
+    @keyframes scroll {
+      0% {
+        position: relative;
+        top: 0px;
+      }
+      50% {
+        position: relative;
+        top: 5px;
+      }
+      100% {
+        position: relative;
+        top: 0px;
+      }
+    }
+    p {
+      color: $white;
+    }
+    img {
+      width: 45px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    .title {
+      h2 {
+        font-size: 112px;
+        letter-spacing: 18px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+}

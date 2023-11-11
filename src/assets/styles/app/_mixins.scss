@@ -1,0 +1,30 @@
+//Flex mixins
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//Components mixins
+
+@mixin button {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 10px 50px;
+  border-radius: 50px;
+  background: #3487f5;
+  cursor: pointer;
+}
