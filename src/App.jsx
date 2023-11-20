@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { store } from 'store/store.js'
 
-// import './i18n.js'
+import './i18n.js'
 
 import 'styles/app/_reset.scss'
 

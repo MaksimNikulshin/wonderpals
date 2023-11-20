@@ -1,7 +1,7 @@
 @import 'styles/app/_mixins.scss';
 @import 'styles/app/_variables.scss';
 
-.main {
+#main {
   @include flex-center-column;
   justify-content: space-between;
   height: 100vh;
@@ -32,6 +32,7 @@
     margin: 50px;
     gap: 10px;
     animation: scroll 1.5s ease-in-out infinite;
+    cursor: pointer;
     @keyframes scroll {
       0% {
         position: relative;
@@ -56,7 +57,7 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .main {
+  #main {
     .title {
       h2 {
         font-size: 112px;

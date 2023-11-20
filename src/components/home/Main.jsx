@@ -1,4 +1,6 @@
 //Import components
+import { Link } from 'react-scroll'
+import { useTranslation } from 'react-i18next'
 
 //Import styles
 import 'styles/components/home/main.scss'
@@ -7,19 +9,23 @@ import 'styles/components/home/main.scss'
 import arrow from 'images/arrow.svg'
 
 export default function Main() {
+  const { t } = useTranslation()
+
   return (
-    <section className='main'>
+    <section id='main'>
       <div className='title'>
         <h2>WONDERPALS</h2>
-        <h1>We specialize in trust and success.</h1>
+        <h1>{t('subTitleMain')}</h1>
       </div>
-      <div className='container'>
-        <p>scroll down</p>
+      <Link
+        to='portfolio'
+        className='container'>
+        <p>{t('scroll down')}</p>
         <img
           src={arrow}
           alt='arrow-icon'
         />
-      </div>
+      </Link>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 //Import components
 import Slider from 'react-slick'
+import { useTranslation } from 'react-i18next'
 
 //Import styles
 import 'styles/components/home/portfolio.scss'
@@ -17,6 +18,8 @@ import {
 import sliderImage from 'images/sliderImage.png'
 
 export default function Portfolio() {
+  const { t } = useTranslation()
+
   //Slider configurations
   const settings = {
     dots: true,
@@ -66,16 +69,18 @@ export default function Portfolio() {
   ]
 
   return (
-    <section className='portfolio'>
+    <section id='portfolio'>
       <div className='header'>
         <div>
-          <h3>PORTFOLIO</h3>
+          <h3>{t('PORTFOLIO')}</h3>
           <p>
-            Explore our diverse portfolio to find the perfect solution for you.
+            {t(
+              'subTitlePortfolio'
+            )}
           </p>
         </div>
         <div className='icons'>
-          <p>More of our projects {'=>'}</p>
+          <p>{t('More of our projects')}:</p>
           <AiFillBehanceCircle />
           <AiFillGithub />
           <AiFillCodepenCircle />
@@ -96,7 +101,8 @@ export default function Portfolio() {
                   <p>{item.title}</p>
                   {item.subTitle.length > 120 ? (
                     <p>
-                      {item.subTitle.slice(0, 120)} <a>. . . Read more</a>
+                      {item.subTitle.slice(0, 120)}
+                      <a>. . . {t('Read more')}</a>
                     </p>
                   ) : (
                     <p>{item.subTitle}</p>
@@ -105,7 +111,7 @@ export default function Portfolio() {
                 <div className='slider-description-desktop'>
                   <p>{item.title}</p>
                   <p>{item.subTitle}</p>
-                  <button>Read more</button>
+                  <button>{t('Read more')}</button>
                 </div>
               </div>
             ))}

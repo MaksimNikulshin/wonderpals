@@ -8,12 +8,12 @@ export default function Template() {
   //Initialization variables
   const { pathname } = useLocation()
 
-  // //Function for scrool to top when change url location
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     window.scrollTo({ top: 0, behavior: 'smooth' })
-  //   }, 0)
-  // }, [pathname])
+  //Function for scrool to top when change url location
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 0)
+  }, [pathname])
 
   return (
     <>

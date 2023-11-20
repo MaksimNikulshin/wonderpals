@@ -1,0 +1,65 @@
+@import 'styles/app/_mixins.scss';
+@import 'styles/app/_variables.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000042;
+  height: 100vh;
+  z-index: 10;
+  width: 100vw;
+  margin-top: 30px;
+  .content {
+    @include flex-center-column;
+    padding: 50px 20px;
+    background: linear-gradient(252deg, #060a14 50.91%, #071c38 100%);
+    width: 70vw;
+    max-width: 550px;
+    border-radius: 50px;
+    form {
+      width: 100%;
+    }
+    label {
+      p {
+        color: #ffffff;
+        padding-left: 10px;
+        font-size: 14px;
+      }
+    }
+    input {
+      color: #ffffff;
+      margin: 15px 0px;
+      width: 100%;
+      border-radius: 10px;
+      height: 35px;
+      border: solid 0.5px #ffffff;
+      &[type='text'] {
+        padding-left: 15px;
+      }
+      &[type='submit'] {
+        @include button;
+        height: 100%;
+      }
+      &[type='file'] {
+        @include flex-center;
+        padding-left: 10px;
+        margin-top: 10px;
+        padding-top: 5px;
+        &::-webkit-file-upload-button {
+          display: none;
+        }
+      }
+      &::placeholder {
+        color: #ffffff5b;
+      }
+    }
+    .error {
+      padding: 20px;
+      color: red;
+    }
+  }
+}

@@ -1,11 +1,11 @@
 @import 'styles/app/_mixins.scss';
 @import 'styles/app/_variables.scss';
 
-.portfolio {
+#portfolio {
   @include flex-center-column;
   height: 100%;
   gap: 50px;
-  padding-top: 150px;
+  padding-top: 350px;
   .header {
     @include flex-center-column;
     width: 100%;
@@ -101,7 +101,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .portfolio {
+  #portfolio {
     .header {
       flex-direction: row;
       justify-content: space-between;
@@ -173,7 +173,7 @@
 }
 
 @media only screen and (min-width: 1600px) {
-  .portfolio {
+  #portfolio {
     .slider {
       .slide {
         img {

@@ -1,10 +1,10 @@
 @import 'styles/app/_mixins.scss';
 @import 'styles/app/_variables.scss';
 
-.our-services {
+#our-services {
   @include flex-center-column;
   gap: 50px;
-  margin-top: 150px;
+  margin-top: 350px;
   .header {
     @include flex-center-column;
     padding: 0px 20px;
@@ -61,7 +61,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .our-services {
+  #our-services {
     @include flex-center;
     flex-direction: row-reverse;
     .header {

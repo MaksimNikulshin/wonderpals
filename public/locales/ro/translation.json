@@ -1,0 +1,68 @@
+{
+    "_comment header": "COMPONENTĂ HEADER",
+
+    "PORTFOLIO": "PORTOFOLIU",
+    "SERVICES": "SERVICII",
+    "NEWS LETTER": "BULETIN DE ȘTIRI",
+    "TEAM": "ECHIPĂ",
+    "NEWS": "ȘTIRI",
+
+    "_comment main": "COMPONENTĂ PRINCIPALĂ",
+
+    "subTitleMain": "Ne specializăm în încredere și succes",
+    "scroll down": "derulați în jos",
+
+    "_comment portfolio": "COMPONENTĂ PORTOFOLIU",
+
+    "subTitlePortfolio": "Explorați portofoliul nostru divers pentru a găsi soluția perfectă pentru dumneavoastră.",
+    "More of our projects": "Mai multe dintre proiectele noastre",
+    "Read more": "Citiți mai mult",
+
+    "_comment services": "COMPONENTĂ SERVICII",
+
+    "All our services": "Toate serviciile noastre",
+    "subTitleServices": "Descoperiți amploarea și profunzimea ofertelor noastre cu gama noastră cuprinzătoare de servicii. De la soluții tehnologice de vârf la consultanță personalizată, suntem aici pentru a satisface toate nevoile dumneavoastră.",
+    "Support Department": "Departament de suport",
+    "subTitleSupport": "Echipa noastră dedicată de suport este aici pentru a vă asista în fiecare pas. Indiferent dacă aveți întrebări, întâmpinați probleme sau aveți nevoie de îndrumare, experții noștri sunt pregătiți să vă ofere asistență rapidă și de încredere.",
+    "Marketing Department": "Departament de marketing",
+    "subTitleMarketing": "Departamentul nostru dinamic de marketing este motorul creativ în spatele succesului mărcii noastre. Cu o pasiune pentru inovație și o înțelegere profundă a tendințelor pieței, creăm campanii captivante pentru a captiva audiențele și a stimula creșterea.",
+    "Development Team": "Echipa de dezvoltare",
+    "subTitleDevelopment": "Echipa noastră extrem de calificată de dezvoltare este forța de conducere în spatele inovațiilor noastre tehnologice. Cu o căutare neobosită a excelenței, transformăm ideile în realitate, creând soluții de ultimă oră care modelează viitorul.",
+    "Design Team": "Echipa de design",
+    "subTitleDesign": "Echipa noastră de design vizionară este dedicată transformării ideilor în experiențe vizuale uimitoare. Cu un ochi pentru detalii și o pasiune pentru estetică, creăm designuri captivante care rezonază cu audiențele.",
+
+    "_comment newsletter": "COMPONENTĂ BULETIN DE ȘTIRI",
+
+    "NEWSLETTER": "BULETIN DE ȘTIRI",
+    "Subscribe to our newsletter and unlock a world of exclusive content, insights, and updates delivered directly to your inbox. Stay ahead of the curve with our curated information, special offers, and industry news." : "Abonați-vă la buletinul nostru de știri și descoperiți un univers de conținut exclusiv, idei și actualizări livrate direct în inbox-ul dumneavoastră. Rămâneți înaintea curbei cu informațiile noastre selecționate, oferte speciale și știri din industrie.",
+    "Subscribe": "Abonați-vă",
+    "Name": "Nume",
+    "Email": "Email",
+    "Phone": "Telefon",
+    "Resume": "Curriculum Vitae",
+    "Submit": "Trimiteți",
+
+    "_comment team": "COMPONENTĂ ECHIPĂ",
+
+    "Our team is the heartbeat of our organization. Comprising dedicated professionals from diverse backgrounds, we collaborate seamlessly to achieve excellence in everything we do.": "Echipa noastră este pulsul organizației noastre. Compusă din profesioniști dedicați din medii diverse, colaborăm în mod transparent pentru a atinge excelența în tot ceea ce facem.",
+
+    "_comment career": "COMPONENTĂ CARIERĂ",
+
+    "CAREER": "CARIERĂ",
+
+    "_comment news": "COMPONENTĂ ȘTIRI",
+
+    "Stay in the know with the latest updates from our world.": "Fii la curent cu ultimele actualizări din lumea noastră.",
+    "More news": "Mai multe știri",
+
+    "_comment footer": "COMPONENTĂ SUBSOL",
+
+    "NAVIGATION": "NAVIGAȚIE",
+    "INFORMATION": "INFORMAȚII",
+    "Columna Street 86, Chisinau MD-2001": "Strada Columna 86, Chișinău MD-2001",
+    "Monday-Friday: 09:00-18:00": "Luni-Vineri: 09:00-18:00",
+    "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.",
+    "Saturday: 09:00-14:00": "Sâmbătă: 09:00-14:00",
+    "Sunday: Day off.": "Duminică: Liber",
+    "Follow us on social media": "Urmați-ne pe rețelele sociale"
+}

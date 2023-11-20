@@ -5,6 +5,7 @@ import OurServices from 'components/home/OurServices'
 import NewsLetter from 'components/home/NewsLetter'
 import Team from 'components/home/Team'
 import News from 'components/home/News'
+import Career from 'components/home/Career'
 
 //Import styles
 import 'styles/pages/home.scss'
@@ -17,6 +18,7 @@ export default function Home() {
       <OurServices />
       <NewsLetter />
       <Team />
+      <Career />
       <News />
     </section>
   )

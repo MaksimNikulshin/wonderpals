@@ -1,10 +1,10 @@
 @import 'styles/app/_mixins.scss';
 @import 'styles/app/_variables.scss';
 
-.news {
+#news {
   @include flex-center-column;
   gap: 50px;
-  margin-top: 150px;
+  margin-top: 350px;
   .header {
     width: 100%;
     padding: 0px 20px;
@@ -68,10 +68,13 @@
       }
     }
   }
+  button {
+    @include button;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-  .news {
+  #news {
     .header {
       @include flex-center;
       justify-content: space-between;

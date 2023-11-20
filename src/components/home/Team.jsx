@@ -1,7 +1,10 @@
-//Import styles
+// Import components
+import { useTranslation } from 'react-i18next'
+
+// Import styles
 import 'styles/components/home/team.scss'
 
-//Import images
+// Import images
 import team from 'images/team.png'
 import youtube from 'images/youtube.svg'
 import vk from 'images/vk.svg'
@@ -10,16 +13,19 @@ import telegram from 'images/telegram.svg'
 import instagram from 'images/instagram.svg'
 
 export default function Team() {
+  //Initialization state manager
+  const { t } = useTranslation()
+
   return (
-    <section className='team'>
+    <section id='team'>
       <div className='header'>
-        <h3>TEAM</h3>
+        <h3>{t('TEAM')}</h3>
         <p>
-          Our team is the heartbeat of our organization. Comprising dedicated
-          professionals from diverse backgrounds, we collaborate seamlessly to
-          achieve excellence in everything we do.
+          {t(
+            'Our team is the heartbeat of our organization. Comprising dedicated professionals from diverse backgrounds, we collaborate seamlessly to achieve excellence in everything we do.'
+          )}
         </p>
-        <button>Read more</button>
+        <button>{t('Read more')}</button>
       </div>
       <div className='content'>
         <img

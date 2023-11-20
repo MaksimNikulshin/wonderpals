@@ -1,18 +1,18 @@
-//Import components
-import { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { useTranslation } from 'react-i18next'
-import Modal from '../app/Modal'
+// Import components
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import Modal from '../app/Modal';
+import { useTranslation } from 'react-i18next';
 
-//Import styles
-import 'styles/components/home/newsLetter.scss'
+// Import styles
+import 'styles/components/home/career.scss';
 
-export default function NewsLetter() {
-  //Initialization state manager
-  const { t } = useTranslation()
-  const [active, setActive] = useState(false)
+export default function Career() {
+  // Initialization state manager
+  const { t } = useTranslation();
+  const [active, setActive] = useState(false);
 
-  //Initialization form manager
+  // Initialization form manager
   const {
     register,
     handleSubmit,
@@ -20,17 +20,17 @@ export default function NewsLetter() {
   } = useForm({
     mode: 'onBlur',
     reValidateMode: 'onBlur',
-  })
+  });
 
-  //Function onSubmit
+  // Function onSubmit
   const onSubmit = () => {
-    setActive(false)
-  }
+    setActive(false);
+  };
 
   return (
-    <section id='news-letter'>
+    <section id='career'>
       <div className='container'>
-        <p>{t('NEWSLETTER')}</p>
+        <p>{t('CAREER')}</p>
         <p>
           {t(
             'Subscribe to our newsletter and unlock a world of exclusive content, insights, and updates delivered directly to your inbox. Stay ahead of the curve with our curated information, special offers, and industry news.'

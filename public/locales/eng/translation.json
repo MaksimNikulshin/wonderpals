@@ -1,0 +1,68 @@
+{
+    "_comment header": "HEADER COMPONENT",
+
+    "PORTFOLIO": "PORTFOLIO",
+    "SERVICES": "SERVICES",
+    "NEWS LETTER": "NEWS LETTER",
+    "TEAM": "TEAM",
+    "NEWS": "NEWS",
+
+    "_comment main": "MAIN COMPONENT",
+
+    "subTitleMain": "We specialize in trust and success",
+    "scroll down": "scroll down",
+
+    "_comment portfolio": "PORTFOLIO COMPONENT",
+
+    "subTitlePortfolio": "Explore our diverse portfolio to find the perfect solution for you.",
+    "More of our projects": "More of our projects",
+    "Read more": "Read more",
+
+    "_comment services": "SERVICES COMPONENT",
+
+    "All our services": "All our services",
+    "subTitleServices": "Discover the breadth and depth of our offerings with our comprehensive range of services. From cutting-edge technology solutions to personalized consulting, we're here to meet all your needs.",
+    "Support Department": "Support Department",
+    "subTitleSupport": "Our dedicated support team is here to assist you every step of the way. Whether you have questions, encounter issues, or need guidance, our experts are ready to provide timely and reliable assistance.",
+    "Marketing Department": "Marketing Department",
+    "subTitleMarketing": "Our dynamic Marketing Department is the creative engine behind our brand's success. With a passion for innovation and a keen understanding of market trends, we craft compelling campaigns to captivate audiences and drive growth.",
+    "Development Team": "Development Team",
+    "subTitleDevelopment": "Our highly skilled Development Team is the driving force behind our technological innovations. With a relentless pursuit of excellence, we turn ideas into reality, crafting cutting-edge solutions that shape the future.",
+    "Design Team": "Design Team",
+    "subTitleDesign": "Our visionary Design Team is dedicated to transforming ideas into stunning visual experiences. With an eye for detail and a passion for aesthetics, we craft engaging designs that resonate with audiences.",
+
+    "_comment newsletter": "NEWSLETTER COMPONENT",
+
+    "NEWSLETTER": "NEWSLETTER",
+    "Subscribe to our newsletter and unlock a world of exclusive content, insights, and updates delivered directly to your inbox. Stay ahead of the curve with our curated information, special offers, and industry news." : "Subscribe to our newsletter and unlock a world of exclusive content, insights, and updates delivered directly to your inbox. Stay ahead of the curve with our curated information, special offers, and industry news.",
+    "Subscribe": "Subscribe",
+    "Name": "Name",
+    "Email": "Email",
+    "Phone": "Phone",
+    "Resume": "Resume",
+    "Submit": "Submit",
+
+    "_comment team": "TEAM COMPONENT",
+
+    "Our team is the heartbeat of our organization. Comprising dedicated professionals from diverse backgrounds, we collaborate seamlessly to achieve excellence in everything we do.": "Our team is the heartbeat of our organization. Comprising dedicated professionals from diverse backgrounds, we collaborate seamlessly to achieve excellence in everything we do.",
+
+    "_comment career": "CAREER COMPONENT",
+
+    "CAREER": "CAREER",
+
+    "_comment news": "NEWS COMPONENT",
+
+    "Stay in the know with the latest updates from our world.": "Stay in the know with the latest updates from our world.",
+    "More news": "More news",
+
+    "_comment footer": "FOOTER COMPONENT",
+
+    "NAVIGATION": "NAVIGATION",
+    "INFORMATION": "INFORMATION",
+    "Columna Street 86, Chisinau MD-2001": "Columna Street 86, Chisinau MD-2001",
+    "Monday-Friday: 09:00-18:00": "Monday-Friday: 09:00-18:00",
+    "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.",
+    "Saturday: 09:00-14:00": "Saturday: 09:00-14:00",
+    "Sunday: Day off.": "Sunday: Day off.",
+    "Follow us on social media": "Follow us on social media"
+  }
