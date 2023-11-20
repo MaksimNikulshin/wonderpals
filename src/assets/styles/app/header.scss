@@ -31,6 +31,9 @@ header {
       color: #fff;
       font-weight: 700;
       cursor: pointer;
+      &.active {
+        text-decoration: underline
+      }
     }
     .sub-menu {
       @include flex-center-column;
@@ -41,12 +44,20 @@ header {
       transition: right 0.3s ease;
       top: 85px;
       padding: 20px;
+      .change-language {
+        display: none;
+      }
       &.active {
         width: 360px;
         height: 100vh;
         right: 0;
         backdrop-filter: blur(50px);
-        background-color: #00000099;
+        background: linear-gradient(
+          240deg,
+          #071c38 0%,
+          #060a14 17.65%,
+          #060a14 40.34%
+        );
       }
     }
     .burger {
@@ -84,6 +95,9 @@ header {
         top: inherit;
         right: inherit;
         background-color: transparent;
+        .change-language {
+          display: block;
+        }
       }
       .burger {
         display: none;

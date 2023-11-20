@@ -8,6 +8,7 @@ export default function Header() {
   //Initialization state manager
   const [burger, setBurger] = useState(false)
   const [language, setLanguage] = useState(false)
+  const [activeLanguage, setActiveLanguage] = useState(localStorage.getItem('i18nextLng'))
   const { t, i18n } = useTranslation()
 
   useEffect(() => {
@@ -16,6 +17,7 @@ export default function Header() {
 
   const changeLanguage = language => {
     i18n.changeLanguage(language)
+    setActiveLanguage(language)
     setLanguage(false)
   }
 
@@ -26,11 +28,36 @@ export default function Header() {
           <Link to='main'>{t('WONDERPALS')}</Link>
         </div>
         <div className={burger ? 'sub-menu active' : 'sub-menu'}>
-          <Link to='portfolio'>{t('PORTFOLIO')}</Link>
-          <Link to='our-services'>{t('SERVICES')}</Link>
-          <Link to='news-letter'>{t('NEWS LETTER')}</Link>
-          <Link to='team'>{t('TEAM')}</Link>
-          <Link to='news'>{t('NEWS')}</Link>
+          <Link
+            onClick={() => setBurger(false)}
+            to='portfolio'
+            offset={-120}>
+            {t('PORTFOLIO')}
+          </Link>
+          <Link
+            onClick={() => setBurger(false)}
+            to='our-services'
+            offset={-80}>
+            {t('SERVICES')}
+          </Link>
+          <Link
+            onClick={() => setBurger(false)}
+            to='news-letter'
+            offset={-150}>
+            {t('NEWS LETTER')}
+          </Link>
+          <Link
+            onClick={() => setBurger(false)}
+            to='team'
+            offset={-120}>
+            {t('TEAM')}
+          </Link>
+          <Link
+            onClick={() => setBurger(false)}
+            to='news'
+            offset={-120}>
+            {t('NEWS')}
+          </Link>
           <p
             onClick={() => setLanguage(!language)}
             className='change-language'>
@@ -40,9 +67,21 @@ export default function Header() {
             className={
               language ? 'language-container active' : 'language-container'
             }>
-            <a onClick={() => changeLanguage('eng')}>ENG</a>
-            <a onClick={() => changeLanguage('ro')}>RO</a>
-            <a onClick={() => changeLanguage('ru')}>RU</a>
+            <a
+              onClick={() => changeLanguage('eng')}
+              className={activeLanguage === 'eng' ? 'active' : null}>
+              ENG
+            </a>
+            <a
+              onClick={() => changeLanguage('ro')}
+              className={activeLanguage === 'ro' ? 'active' : null}>
+              RO
+            </a>
+            <a
+              onClick={() => changeLanguage('ru')}
+              className={activeLanguage === 'ru' ? 'active' : null}>
+              RU
+            </a>
           </div>
         </div>
         <div

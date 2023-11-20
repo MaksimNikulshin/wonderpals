@@ -4,7 +4,7 @@
 #news {
   @include flex-center-column;
   gap: 50px;
-  margin-top: 350px;
+  margin-top: 200px;
   .header {
     width: 100%;
     padding: 0px 20px;
@@ -75,6 +75,7 @@
 
 @media only screen and (min-width: 1280px) {
   #news {
+    margin-top: 350px;
     .header {
       @include flex-center;
       justify-content: space-between;

@@ -4,7 +4,7 @@
 #team {
   @include flex-center-column;
   gap: 50px;
-  margin-top: 350px;
+  margin-top: 200px;
   .header {
     @include flex-center-column;
     padding: 0px 20px;
@@ -46,6 +46,7 @@
 
 @media only screen and (min-width: 1280px) {
   #team {
+    margin-top: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
